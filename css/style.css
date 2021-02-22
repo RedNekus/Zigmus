@@ -1,3 +1,4 @@
+@import url(../fonts/raleway.css);
 body {
   color: #2C2C2C;
   font-family: Raleway;
@@ -13,7 +14,7 @@ ul {
   margin: 0; }
 
 .container {
-  max-width: 1280px;
+  max-width: 1440px;
   margin: 0 auto; }
 
 header {
@@ -22,7 +23,8 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 94px; }
+    height: 94px;
+    padding: 0 75px; }
     header .top .logo {
       padding-right: 65px; }
     header .top-icon {
@@ -49,7 +51,8 @@ header {
           display: inline-flex;
           align-items: center;
           height: inherit;
-          border-bottom: 2px solid transparent; }
+          border-bottom: 2px solid transparent;
+          box-sizing: border-box; }
           header .top-menu-item a:hover {
             border-bottom-color: #83B373; }
 
@@ -70,10 +73,36 @@ header {
   font-size: 12px;
   line-height: 14px;
   display: flex;
-  align-items: center; }
+  align-items: center;
+  cursor: pointer; }
   .btn.btn-green {
     background: #83B373;
     color: white; }
   .btn.info:after {
     content: url("../img/info.svg");
     padding-left: 11px; }
+
+h2 {
+  font-size: 42px;
+  line-height: 26px;
+  font-weight: 400; }
+
+.main {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  overflow: hidden;
+  padding-left: 75px; }
+  .main-left {
+    padding: 0 65px 0 116px;
+    box-sizing: border-box;
+    flex-basis: 621px;
+    flex-shrink: 0; }
+  .main-right {
+    flex-basis: 762px;
+    flex-shrink: 0;
+    text-align: right; }
+  .main p {
+    font-size: 16px;
+    line-height: 25px;
+    opacity: 0.6; }
